@@ -17,5 +17,6 @@ export let quotes = [{text: "The greatest glory in living lies not in never fall
               {text: "I think we are well-advised to keep on nodding terms with the people we used to be, whether we find them attractive company or not. Otherwise they turn up unannounced and surprise us...", author: "Joan Didion"},
               {text: "When the going gets weird, the weird turn pro.", author: "Hunter S. Thompson"},
               {text: "The world breaks everyone, and afterward, some are strong at the broken places.", author: "Ernest Hemingway"},
-              {text: "In a murderous time the heart breaks and breaks and lives by breaking.", author: "Stanley Kunitz"}
+              {text: "In a murderous time the heart breaks and breaks and lives by breaking.", author: "Stanley Kunitz"},
+              {text: "You may say I lost everything, but I still had my Be-Dazzler.", author: "Lady Gaga"}
       ]
