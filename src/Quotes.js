@@ -12,5 +12,7 @@ export let quotes = [{text: "The greatest glory in living lies not in never fall
               {text: "Live as if you were to die tomorrow. Learn as if you were to live forever.", author: "Mahatma Gandhi"},
               {text: "We must not allow other people’s limited perceptions to define us.", author: "Virginia Satir"},
               {text: "If you cannot do great things, do small things in a great way.", author: "Napoleon Hill"},
-              {text: "Wise men speak because they have something to say; fools because they have to say something.", author: "Plato"}
+              {text: "Wise men speak because they have something to say; fools because they have to say something.", author: "Plato"},
+              {text: "I want to feel what I feel. What's mine. Even if it's not happiness, whatever that means. Because you're all you've got.", author: "Toni Morrison"},
+              {text: "I think we are well-advised to keep on nodding terms with the people we used to be, whether we find them attractive company or not. Otherwise they turn up unannounced and surprise us...", author: "Joan Didion"}
       ]

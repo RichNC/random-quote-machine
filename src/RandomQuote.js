@@ -29,23 +29,30 @@ export class RandomQuote extends React.Component {
     })
   }
   applyBackgroundColor(){
+    const currentColor = document.querySelector('body').style.background;
+    console.log(currentColor)
     const color = colors[Math.floor(Math.random() * colors.length)]
     document.body.style.background = color;
     document.getElementById('card').style.color = color;
-    document.querySelector('button').style.backgroundColor = color;
+    document.querySelector('button').style.background = color;
 
   }
   render(){
     let quoteIndex = this.randomIndex();
     return (
       <div id="card">
-        <p id="text"><i class="fas fa-quote-left"></i> {quotes[quoteIndex].text} <i class="fas fa-quote-right"></i></p>
+        <p id="text"><i className="fas fa-quote-left"></i> {quotes[quoteIndex].text} <i className="fas fa-quote-right"></i></p>
         <p id="author">- {quotes[quoteIndex].author}</p>
         <div id="button">
-          <i class="fab fa-twitter-square"></i>
+          <div id="social-links">
+            <i className="fab fa-twitter-square"></i>
+            <i className="fab fa-tumblr-square"></i>
+          </div>
           <Button onClick={this.handleClick} />
+
         </div>
       </div>
       )
   }
 }
+
