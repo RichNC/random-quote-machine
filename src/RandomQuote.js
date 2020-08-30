@@ -35,7 +35,6 @@ export class RandomQuote extends React.Component {
     document.body.style.background = color;
     document.getElementById('quote-box').style.color = color;
     document.querySelector('button').style.background = color;
-
   }
   render(){
     let quoteIndex = this.randomIndex();
