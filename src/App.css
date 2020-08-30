@@ -101,6 +101,12 @@ button:hover {
   transition:all 2s linear;
 }
 
+@media only screen and (max-width: 600px) {
+  #quote-box {
+    width: 80%;
+  }
+}
+
 #text {
   font-size: 1.4em;
   margin-bottom: 10px;
