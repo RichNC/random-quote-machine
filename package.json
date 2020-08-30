@@ -2,7 +2,7 @@
   "name": "fcc-random-quote-machine",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://RichNC.github.io/random-quote-machine",
+  "homepage": "https://RichNC.github.io/random-quote-machine",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
