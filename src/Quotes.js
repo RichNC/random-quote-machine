@@ -8,5 +8,9 @@ export let quotes = [{text: "The greatest glory in living lies not in never fall
               {text: "In the end, it's not the years in your life that count. It's the life in your years.", author: "Abraham Lincoln"},
               {text: "Be yourself; everyone else is already taken.", author: "Oscar Wilde"},
               {text: "A fashion is nothing but an induced epidemic.", author: "George Bernard Shaw"},
-              {text: "Progress is impossible without change, and those who cannot change their minds cannot change anything.", author: "George Bernard Shaw"}
+              {text: "Progress is impossible without change, and those who cannot change their minds cannot change anything.", author: "George Bernard Shaw"},
+              {text: "Live as if you were to die tomorrow. Learn as if you were to live forever.", author: "Mahatma Gandhi"},
+              {text: "We must not allow other people’s limited perceptions to define us.", author: "Virginia Satir"},
+              {text: "If you cannot do great things, do small things in a great way.", author: "Napoleon Hill"},
+              {text: "Wise men speak because they have something to say; fools because they have to say something.", author: "Plato"}
       ]

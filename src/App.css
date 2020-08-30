@@ -1,3 +1,42 @@
+body {
+  -webkit-transition:background-color 2s ease;
+  -moz-transition:background-color 2s ease;
+  -o-transition:background-color 2s ease;
+  transition:background-color 2s ease;
+}
+
+button {
+  font-family: 'Pacifico', cursive;
+  color: #E9E3C3;
+  font-size: 18px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  -webkit-animation: bounce 1.5s infinite alternate;
+  -moz-animation: bounce 1.5s infinite alternate;
+  animation: bounce 1.5s infinite alternate;
+  -webkit-transition:background-color 2s ease;
+  -moz-transition:background-color 2s ease;
+  -o-transition:background-color 2s ease;
+  transition:background-color 2s ease;
+}
+@-webkit-keyframes bounce {
+  to { -webkit-transform: scale(1.08); }
+}
+@-moz-keyframes bounce {
+  to { -moz-transform: scale(1.08); }
+}
+@keyframes bounce {
+  to { transform: scale(1.08); }
+}
+
+button:hover {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(82,82,82,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(82,82,82,1);
+  box-shadow: 0px 0px 5px 0px rgba(82,82,82,1);
+  cursor: pointer;
+}
+
 .App {
   text-align: center;
 }
@@ -14,7 +53,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +74,25 @@
     transform: rotate(360deg);
   }
 }
+
+#card {
+  background-color: #E9E3C3;
+  width: 500px;
+  border-radius: 5px;
+  padding: 30px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(82,82,82,1);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(82,82,82,1);
+  box-shadow: 0px 0px 20px 0px rgba(82,82,82,1);
+}
+
+#text {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+#author {
+  font-size: .8em;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0;
+}
+
