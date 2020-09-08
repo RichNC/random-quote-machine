@@ -1,6 +1,6 @@
 import React from 'react';
 import { quotes } from './Quotes';
-import { Button } from './Button';
+import { Button } from './Components/Button';
 import { colors } from './Colors';
 
 export class RandomQuote extends React.Component {
@@ -29,27 +29,27 @@ export class RandomQuote extends React.Component {
     })
   }
   applyBackgroundColor(){
-    const currentColor = document.querySelector('body').style.background;
-    console.log(currentColor)
     const color = colors[Math.floor(Math.random() * colors.length)]
     document.body.style.background = color;
-    document.getElementById('quote-box').style.color = color;
-    document.querySelector('button').style.background = color;
+    // document.getElementById('quote-box').style.color = color;
+    // document.querySelector('button').style.background = color;
   }
   render(){
     let quoteIndex = this.randomIndex();
     let quote = quotes[quoteIndex].text
     let quoteAuthor = quotes[quoteIndex].author
     return (
-      <div id="quote-box">
-        <p id="text"><i className="fas fa-quote-left"></i> {quote} <i className="fas fa-quote-right"></i></p>
-        <p id="author">- {quoteAuthor}</p>
-        <div id="button">
-          <div id="social-links">
-            <a id="tweet-quote" className="twitter-share-button" href={"https://twitter.com/intent/tweet?text=" + quote + " -" + quoteAuthor} data-size="large" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter-square"></i></a>
-          </div>
-          <Button onClick={this.handleClick} id="new-quote" />
+
+      <div className="content-box">
+
+        <div id="quote-box" className="sign-shape-1">
+          <p id="text"><i className="fas fa-quote-left"></i> {quote} <i className="fas fa-quote-right"></i></p>
+          <p id="author">- {quoteAuthor}</p>
         </div>
+        <footer>
+          <a id="tweet-quote" href={"https://twitter.com/intent/tweet?text=" + quote + " -" + quoteAuthor} data-size="large" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter-square"></i></a>
+          <Button onClick={this.handleClick} id="new-quote" />
+        </footer>
       </div>
       )
   }
