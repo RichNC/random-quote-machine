@@ -39,7 +39,7 @@ export class RandomQuote extends React.Component {
     let quoteAuthor = quotes[quoteIndex].author
     return (
       <div className="content-box">
-        <div id="quote-box" className="sign-shape-1">
+        <div className="sign-shape-1">
           <p id="text"><i className="fas fa-quote-left"></i> {quote} <i className="fas fa-quote-right"></i></p>
           <p id="author">- {quoteAuthor}</p>
         </div>
